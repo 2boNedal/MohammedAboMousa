@@ -194,7 +194,7 @@
             <img src="{{ asset('cms/dist/img/user1-128x128.jpg') }}" class="img-circle elevation-2">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Alexander Pierce</a>
+            <a href="#" class="d-block">Mohammed N. Abo Mousa</a>
           </div>
         </div>
 
@@ -234,16 +234,16 @@
             </li>
 
             <!-- User Management -->
-            <li class="nav-header">User Management</li>
+            <!-- <li class="nav-header">User Management</li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-user"></i>
                 <p>Admin</p>
               </a>
-            </li>
+            </li> -->
 
             <!-- Content Management -->
-            <li class="nav-header">Content Management</li>
+            <!-- <li class="nav-header">Content Management</li>
 
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -257,16 +257,40 @@
                 <i class="nav-icon fas fa-city"></i>
                 <p>City</p>
               </a>
+            </li> -->
+
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tasks"></i>
+                <p>
+                  Tasks
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{ route('tasks.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>All Tasks</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('tasks.trashed') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Deleted Tasks</p>
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <!-- Setting -->
-            <li class="nav-header">Setting</li>
+            <!-- <li class="nav-header">Setting</li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-user-cog"></i>
                 <p>Edit Profile</p>
               </a>
-            </li>
+            </li> -->
 
           </ul>
         </nav>
